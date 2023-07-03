@@ -340,6 +340,4 @@ export default class ImageInstance extends Model {
     let {data} = await Cytomine.instance.api.get(`${this.callbackIdentifier}/${this.id}/channelhistogram/bounds.json`);
     return data.collection;
   }
-
-
 }
